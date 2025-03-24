@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block navigator %}
+    <a class="navbar-brand" href="{% url 'face_list' %}">Voir les visages enregistrés</a>
+    <a class="navbar-brand" href="{% url 'upload_face' %}">Uploader un nouveau visage</a>
+{% endblock navigator %}
+
+{% block container %}
+    <h1>Reconnaissance faciale</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+            <input type="file" name="image" class="form-control-file">
+        </div>
+        <button type="submit" class="btn btn-primary">Reconnaître</button>
+    </form>
+    {% if result %}
+        <p class="mt-3">Résultat : {{ result }}</p>
+    {% endif %}
+{% endblock container %}

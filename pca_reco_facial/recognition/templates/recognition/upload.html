@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block navigator %}
+    <a class="navbar-brand" href="{% url 'face_list' %}">Voir les visages enregistrés</a>
+    <a class="navbar-brand" href="{% url 'recognize' %}">Reconnaitre un visage</a>
+{% endblock navigator %}
+
+{% block container %}
+    <h1>Charger une nouvelle image</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Uploader</button>
+    </form>
+{% endblock container %}

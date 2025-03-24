@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block navigator %}
+    <a class="navbar-brand" href="{% url 'upload_face' %}">Uploader un nouveau visage</a>
+    <a class="navbar-brand" href="{% url 'recognize' %}">Reconnaitre un visage</a>
+{% endblock navigator %}
+
+{% block container %}
+    <h1>Liste des visages</h1>
+
+    <div class="row">
+        {% for face in faces %}
+            <div class="col-md-4">
+                <p>{{ face.name }}</p>
+                <img src="{{ face.image.url }}" class="img-fluid" width="100">
+            </div>
+        {% endfor %}
+    </div>
+{% endblock container %}
