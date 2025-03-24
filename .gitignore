@@ -1,10 +1,4 @@
 /env
-
-/__pycache__/
-/.vscode/
-/.idea/
-/.pytest_cache/
-/.mypy_cache/
-/.coverage
+/__pycache__
 
 .db.sqlite3
