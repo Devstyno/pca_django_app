@@ -61,6 +61,7 @@ Cette application utilise l'analyse en composantes principales (PCA) pour effect
 
 Les contributions sont les bienvenues ! Veuillez soumettre une pull request ou ouvrir une issue pour discuter des changements que vous souhaitez apporter.
 
-## Auteur
+## Auteur : Yao David SOUSSOUKPO
 
-- [Yao David SOUSSOUKPO](https://github.com/devstyno)
+- [GitHub](https://github.com/devstyno)
+- [LinkedIn](https://www.linkedin.com/in/yao-david-soussoukpo-0a52a222a/)
