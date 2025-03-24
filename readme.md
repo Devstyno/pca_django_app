@@ -25,19 +25,19 @@ Cette application utilise l'analyse en composantes principales (PCA) pour effect
 1. Clonez le dépôt :
 
     ```bash
-        git clone https://github.com/Devstyno/pca_django_app.git
+    git clone https://github.com/Devstyno/pca_django_app.git
     ```
 
 2. Accédez au répertoire du projet :
 
     ```bash
-        cd reconnaissance_faciale_avec_pca
+    cd reconnaissance_faciale_avec_pca
     ```
 
 3. Installez les dépendances :
 
     ```bash
-        pip install -r requirements.txt
+    pip install -r requirements.txt
     ```
 
 ## Utilisation
@@ -45,7 +45,7 @@ Cette application utilise l'analyse en composantes principales (PCA) pour effect
 1. Démarrez le serveur Django :
 
     ```bash
-        python manage.py runserver
+    python manage.py runserver
     ```
 
 2. Accédez à l'application via votre navigateur à l'adresse `http://127.0.0.1:8000`.
