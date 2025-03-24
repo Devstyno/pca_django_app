@@ -1,4 +1,14 @@
-/__pycache__
-/env
+# Ignore Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore other common files
+.DS_Store
+*.log
 
 .db.sqlite3
